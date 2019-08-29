@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,26 +14,22 @@ public class Main {
         System.out.println(names[1]);
         System.out.println(names[2]);
 
-        String name = "Aibek";
-        switch (name) {
-            case "Rahim":
-                System.out.println("Ваше Имя, Рахим");
-                break;
-            case "Alexandr":
-                System.out.println("Ваше Имя, Александр");
-                break;
-            case "Odil":
-                System.out.println("Ваше Имя, Одиль");
-                break;
-            default:
-                System.out.println("Имени в списке нет))");
-        }
-        int j = 0;
-        while (j < 1) {
-            System.out.println("Привет, " + names[0]);
-            System.out.println("Привет, " + names[1]);
-            System.out.println("Привет, " + names[2]);
-            j++;
+        for (int i = 1; i <= 3; i++) {
+
+            switch (i) {
+                case 1:
+                    System.out.println("Доброе утро, Рахим");
+                    break;
+                case 2:
+                    System.out.println("Добрый день, Александр");
+                    break;
+                case 3:
+                    System.out.println("Добрый вечер, Одиль");
+                    break;
+                default:
+                    System.out.println("Имени в списке нет))");
+
+            }
         }
     }
 }
